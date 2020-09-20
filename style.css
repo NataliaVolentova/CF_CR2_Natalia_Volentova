@@ -1,0 +1,327 @@
+/*Body Max width    */
+body {
+  width: 60%;
+  margin: auto; }
+
+/* Header formating*/
+header {
+  background-color: #5B191A;
+  margin-top: 5%; }
+
+.headerimages {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  align-items: center; }
+
+.headerlogo {
+  margin: 0 auto;
+  margin-bottom: 1%; }
+
+.headerbanner {
+  margin-left: auto;
+  margin-right: auto; }
+
+nav {
+  padding: 1%;
+  display: flex;
+  background-color: black; }
+
+.navbar1 {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-right: 2em; }
+
+/* Start Main content */
+.content {
+  width: 90%;
+  margin: auto; }
+
+/* First row properties */
+.part1 {
+  width: 103.4%;
+  display: flex;
+  justify-content: space-between; }
+
+/* Article card properties part1*/
+.card1 {
+  width: 30%;
+  background-color: #0E0D0D;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.cardtext {
+  padding: 2%;
+  text-align: center;
+  text-decoration: none; }
+
+.imgpart1 {
+  width: 100%; }
+
+/* margin of bottom cards*/
+#special {
+  margin-top: 2%; }
+
+/* Bottom row properties*/
+.container3 {
+  display: flex; }
+
+.botrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 80%; }
+
+/* Bottom row article properties*/
+.container3 {
+  display: flex;
+  justify-content: space-between; }
+
+.card2 {
+  width: 45%;
+  height: 50%;
+  background-color: #0E0D0D;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-self: flex-start; }
+
+.imgbotrow {
+  width: 100%; }
+
+.cflogo {
+  height: 102%;
+  width: 100%; }
+
+/* Pictures only shown in max width 480p*/
+.fswd {
+  width: 100%;
+  height: 100%;
+  margin-top: 2%; }
+
+.cfwd {
+  width: 100%;
+  height: 100%;
+  margin-top: 2%; }
+
+/* Footer properties*/
+footer {
+  background-color: black;
+  width: 100%;
+  margin-top: 5%;
+  padding: 1%;
+  margin-bottom: 5%; }
+
+.navbar2 {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-right: 2em; }
+
+.footertext {
+  color: white;
+  text-align: center;
+  font-size: 1.5em; }
+
+.newsimage {
+  text-align: right; }
+
+.newsimage2 {
+  text-align: right;
+  margin-right: 2%;
+  width: 25%; }
+
+/* Date/Headline/Devimg properties*/
+.date {
+  text-align: right;
+  padding-right: 4%; }
+
+.developer {
+  text-align: center;
+  margin: 2%; }
+
+.devimg {
+  width: 80%; }
+
+.news {
+  background-color: #C4C4C4;
+  font-size: 1.5em; }
+
+.newstext {
+  padding: 0.5em; }
+
+/* Article.html properties */
+.artcontent {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap; }
+
+.artcard1 {
+  width: 30%;
+  background-color: #0E0D0D;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.artcard2 {
+  width: 30%;
+  background-color: #0E0D0D;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 2%; }
+
+/*Media Querys */
+/* Media Query for Iphone */
+@media screen and (max-width: 480px) {
+  /*non display - do not know why some of display: none objects are not hiding*/
+  .headerbanner {
+    display: none; }
+
+
+  .date {
+    display: none !important; }
+
+  .developer {
+    display: none !important; }
+
+  .cf {
+    display: none; }
+
+  /*adjusting header*/
+  .headerlogo {
+    width: 60%;
+    padding: 10% 20% 10% 0%;
+    text-align: left;
+    margin-left: 5%; }
+
+  .navbar1 {
+    margin: auto;
+    font-size: 0.75em;
+    font-weight: 500; }
+
+  /*resizing and ordering articles*/
+  .card1 {
+    width: 45%;
+    margin-top: 5%; }
+
+  .card2 {
+    width: 45%;
+    height: 120px; }
+
+  .part1 {
+    justify-content: space-around;
+    flex-flow: row wrap; }
+
+  .botrow {
+    justify-content: space-around;
+    margin-top: 5%;
+    width: 100%; }
+
+  /*display*/
+  .hidden1 {
+    width: 45%;
+    margin-top: 4%; }
+
+  .cardtext {
+    font-size: 0.6em; }
+
+  .newstext {
+    font-size: 0.6em; }
+
+  /*adjusting footer*/
+  .footertext {
+    font-size: 0.75em; }
+
+  .navbar2 {
+    display: flex;
+    flex-flow: row;
+    font-size: 0.75em;
+    padding-top: 5%;
+    font-weight: 500;
+    margin: auto; }
+
+  .newsimage2 {
+    padding-top: 5%;
+    width: 60%; }
+
+  .newsimage {
+    text-align: center; }
+
+  /*adjusting article cards in article.html*/
+  .artcard1 {
+    width: 60%;
+    margin-top: 2%; }
+
+  .artcard2 {
+    width: 60%; } }
+/* Media Query for Ipad */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cf {
+    display: none; }
+
+  body {
+    width: 90%; }
+
+  .content {
+    width: 100%; }
+
+  .fswd {
+    display: none; }
+
+  .cfwd {
+    display: none; }
+
+  .headerbanner {
+    display: none; }
+
+  .botrow {
+    width: 100%; }
+
+  .headerlogo {
+    width: 85%;
+    text-align: left; }
+
+  .navbar1 {
+    margin: auto;
+    font-size: 1em;
+    font-weight: 500; }
+
+  .footertext {
+    font-size: 1em; }
+
+  .navbar2 {
+    display: flex;
+    flex-flow: row;
+    font-size: 1em;
+    padding-top: 5%;
+    font-weight: 500;
+    margin: auto; }
+
+  .newsimage2 {
+    padding-top: 5%;
+    width: 60%; }
+
+  .newsimage {
+    text-align: center; }
+
+  .cardtext {
+    font-size: 1em; } }
+/* Media Query for up to 1200px because image of disturbing image */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .fswd {
+    display: none; }
+
+  .cfwd {
+    display: none; }
+
+  .headerbanner {
+    display: none; } }
+/* Media Query for up to min width:1200px  */
+@media screen and (min-width: 1201px) {
+  .fswd {
+    display: none; }
+
+  .cfwd {
+    display: none; } }
